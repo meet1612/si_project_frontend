@@ -1,0 +1,49 @@
+
+<div class="container"><h1><b>SIGN UP</b></h1></div>
+<hr>
+<font color="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Please Fill Up All The Fields For SignUp</font>
+<br>
+<div class="container">
+  <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" [(ngModel)]="Email_Id">
+    </mat-form-field>
+    <br>
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Password" [(ngModel)]="Password">
+  </mat-form-field>
+<br>
+  <mat-form-field class="example-full-width">
+      <input matInput placeholder="Username" [(ngModel)]="Username">
+    </mat-form-field>
+<div><b>Gender:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <mat-radio-group>
+  male<mat-radio-button value="male" [(ngModel)]="rbtn1"></mat-radio-button>
+  female<mat-radio-button value="female" [(ngModel)]="rbtn1"></mat-radio-button>
+</mat-radio-group></b>
+<br>
+<mat-form-field class="example-full-width">
+    <input type="number" matInput placeholder="Age" [(ngModel)]="Age">
+  </mat-form-field>
+</div>
+<br>
+<mat-form-field class="example-full-width">
+    <input type="number" matInput placeholder="Mobile" [(ngModel)]="Mobile">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width">
+      <input matInput placeholder="City" [(ngModel)]="City">
+    </mat-form-field>
+ <br>
+ <mat-form-field class="example-full-width">
+    <input matInput placeholder="Address" [(ngModel)]="Address">
+  </mat-form-field>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <button (click)="onSignup()" mat-fab>Signup</button><br>
+    <div class="">
+        <button (click)="onBack()" mat-fab>Cancel</button>
+    </div>
+    </div>
+  </div>
