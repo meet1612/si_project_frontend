@@ -14,6 +14,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
 import { ChangepassComponent } from './changepass/changepass.component';
 import { SignupComponent } from './signup/signup.component';
+import { HeaderComponent } from './header.component';
+import { ProductComponent } from './product/product.component';
+import { ViewProductComponent } from './product/view-product/view-product.component';
+import { BuyproductComponent } from './buyproduct/buyproduct.component';
+import { ProfileComponent } from './profile/profile.component';
+import { EditprofileComponent } from './profile/editprofile/editprofile.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +27,13 @@ import { SignupComponent } from './signup/signup.component';
     LoginComponent,
     ForgetpasswordComponent,
     ChangepassComponent,
-    SignupComponent
+    SignupComponent,
+    HeaderComponent,
+    ProductComponent,
+    ViewProductComponent,
+    BuyproductComponent,
+    ProfileComponent,
+    EditprofileComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,33 @@
+<app-header></app-header>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="list-group">
+          <li  class="list-group-item">
+              <button type="button" class="list-group-item" (click)="ngOnInit()">All</button>
+            </li>
+        <li  class="list-group-item" *ngFor="let item of cat_arr">
+          <button type="button" class="list-group-item" (click)="onclickcat(item.Cat_name)">{{item.Cat_name}}</button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+
+        <div *ngFor="let item of prod1" class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="{{'http://localhost:3000/images/'+item.P_img}}" alt="..." style="height:150px; width:150px;">
+            <div class="caption">
+              <h3>{{item.P_name}}</h3>
+              <p>price:{{item.P_price}}</p>
+              <p>MFG:{{item.P_mfg}}</p>
+              <p>
+                  <button class="btn btn-lg btn-primary form-control" (click)="onView(item)">View</button>
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
