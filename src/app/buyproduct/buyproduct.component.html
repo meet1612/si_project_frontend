@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container">
+  <div class="form-group">
+    <img src="{{'http://localhost:3000/images/'+P_img}}" alt="..." style="height:200px; width:300px;">
+  </div>
+  <div class="form-group">
+    <label>Product_Name:-</label>
+    <label> {{P_name}}</label>
+  </div>
+
+  <div class="form-group">
+    <label>Product_price:-</label>
+    <label> {{P_price}}</label>
+  </div>
+  <div class="form-group">
+    <label>color:-</label>
+    <label> {{P_color}}</label>
+  </div>
+  <div class="form-group">
+    <label>MFG:-</label>
+    <label> {{P_mfg}}</label>
+  </div>
+  <div class="form-group">
+    <label>Description:-</label>
+    <label> {{P_desc}}</label>
+  </div>
+  <label>Please Enter Qty:--</label>
+  <div class="form-group">
+      <select class="form-control" [(ngModel)]="P_soh1" >
+      <option *ngFor="let item of noarr">{{item}}</option>
+    </select></div>
+
+
+  <div class="container">
+    <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <button class="btn btn-lg btn-success form-control" (click)="onOrder()">Place Order</button>
+      </div>

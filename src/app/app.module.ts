@@ -20,6 +20,8 @@ import { ViewProductComponent } from './product/view-product/view-product.compon
 import { BuyproductComponent } from './buyproduct/buyproduct.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EditprofileComponent } from './profile/editprofile/editprofile.component';
+import { MyorderComponent } from './myorder/myorder.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { EditprofileComponent } from './profile/editprofile/editprofile.componen
     ViewProductComponent,
     BuyproductComponent,
     ProfileComponent,
-    EditprofileComponent
+    EditprofileComponent,
+    MyorderComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
